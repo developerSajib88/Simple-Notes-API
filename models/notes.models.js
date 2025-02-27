@@ -19,7 +19,6 @@ const notesSchema = new mongoose.Schema(
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
   },
-  { timestamps: true } // Automatically manages createdAt & updatedAt
 );
 
 module.exports = mongoose.model("Notes", notesSchema);
